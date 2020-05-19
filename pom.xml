@@ -19,6 +19,13 @@
     </properties>
 
     <dependencies>
+        <!--runtime-->
+        <dependency>
+            <groupId>com.sun</groupId>
+            <artifactId>rt</artifactId>
+            <version>1.5.0_06</version>
+        </dependency>
+
         <!--aoplliance-->
         <dependency>
             <groupId>aoplliance</groupId>
@@ -90,6 +97,20 @@
 
         <!--j2ee-->
         <dependency>
+            <groupId>activation</groupId>
+            <artifactId>activation</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${pom.basedir}/lib/j2ee/activation.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>connector</groupId>
+            <artifactId>connector</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${pom.basedir}/lib/j2ee/connector.jar</systemPath>
+        </dependency>
+        <dependency>
             <groupId>ejb</groupId>
             <artifactId>ejb</artifactId>
             <version>1.0</version>
@@ -116,6 +137,13 @@
             <version>1.0</version>
             <scope>system</scope>
             <systemPath>${pom.basedir}/lib/j2ee/jta.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>rowset</groupId>
+            <artifactId>rowset</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${pom.basedir}/lib/j2ee/rowset.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>servlet</groupId>
